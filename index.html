@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox Pricing Table</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Sono", sans-serif;
+        background-color: #1a1a1a;
+        color: #e0d6b9;
+      }
+      .pricing-container {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .pricing-plan {
+        flex: 1;
+        text-align: center;
+        background-color: #2e2b26;
+        padding: 20px;
+        max-width: 400px;
+        border-radius: 5px;
+        border: 2px solid #a52a2a;
+      }
+
+      ul {
+        list-style-type: none;
+      }
+      
+      .plan-title{
+        font-weight: bolder;
+        font-size: 25px;
+        margin-bottom: 10px;
+        color: #f0c040;
+      }
+
+      .plan-price {
+        font-weight: bolder;
+        font-size: 50px;
+        color: #ffdf80;
+      }
+
+      ul.plan-features {
+        justify-content: center;
+        margin-right: 30px;
+      }
+
+      li {
+        padding: 10px;
+      }
+
+      button {
+        background-color: #8b0000;
+        border-radius: 10%;
+        width: 68px;
+        height: 35px;
+        color: #f5f5dc;
+        border: 0px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #a83232;
+      }
+
+      @media (max-width: 1250px) {
+        .pricing-container {
+          flex-direction: column;
+          height: 100%;
+        }
+        .pricing-plan {
+          
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="pricing-container">
+      <div class="pricing-plan">
+        <div class="plan-title">Adventurer</div>
+        <div class="plan-price">9 GP / session</div>
+        <ul class="plan-features">
+          <li>✅ Basic Equipment</li>
+          <li>✅ Access to Town Quests</li>
+          <li>🚫 Magical Items</li>
+        </ul>
+        <button class="plan-button">Join Now</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Hero</div>
+        <div class="plan-price">19 GP / session</div>
+        <ul class="plan-features">
+          <li>✅ Masterwork Gear</li>
+          <li>✅ Access to City Adventures</li>
+          <li>✅ 1 Minor Magic Item</li>
+        </ul>
+        <button class="plan-button">Join Now</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Legend</div>
+        <div class="plan-price">49 GP / session</div>
+        <ul class="plan-features">
+          <li>✅ Enchanted Weapons</li>
+          <li>✅ Epic Campaign Access</li>
+          <li>✅ DM Support Anytime</li>
+        </ul>
+        <button class="plan-button">Join Now</button>
+      </div>
+    </div>
+    <center>
+        <font size="2" color="#8b5a2b">
+            © 2025 Fantasy Adventures - All Spells Reserved | Created by Umut Kurt
+        </font>
+    </center>
+  </body>
+</html>
+
+
